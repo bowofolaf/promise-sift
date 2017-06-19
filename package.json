@@ -2,9 +2,9 @@
   "name": "promise-any",
   "version": "1.0.0",
   "description": "an extension of ES6 Promise.prototype that takes an array of promises and returns a promise that resolves with the results of the successful promises.",
-  "main": "promise-any.js",
+  "main": "src/promise-any.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,19 @@
   "bugs": {
     "url": "https://github.com/bowofolaf/promise-any/issues"
   },
-  "homepage": "https://github.com/bowofolaf/promise-any#readme"
+  "homepage": "https://github.com/bowofolaf/promise-any#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "semantic-release": "^6.3.6"
+  },
+  "devDependencies": {
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-karma": "^2.0.0",
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "promise-polyfill": "^6.0.2"
+  }
 }
