@@ -1,0 +1,23 @@
+{
+  "name": "promise-any",
+  "version": "1.0.0",
+  "description": "an extension of ES6 Promise.prototype that takes an array of promises and returns a promise that resolves with the results of the successful promises.",
+  "main": "promise-any.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bowofolaf/promise-any.git"
+  },
+  "keywords": [
+    "promise",
+    "promises"
+  ],
+  "author": "bowofola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bowofolaf/promise-any/issues"
+  },
+  "homepage": "https://github.com/bowofolaf/promise-any#readme"
+}
