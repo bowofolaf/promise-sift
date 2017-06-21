@@ -15,7 +15,7 @@ describe('Promise any', function (){
 
         Promise.any(promises).then(function (results){
             _results = results;
-        }).catch(function(error){
+        }).catch(function (error){
 
         });
 
@@ -24,5 +24,5 @@ describe('Promise any', function (){
             expect(_results.length).toBe(4);
             done();
         }, 50);
-    })
+    });
 });

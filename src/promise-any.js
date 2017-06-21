@@ -12,8 +12,8 @@
         // mutate promises into new list with errors swallowed.
         var resolvedPromises = promises.map(function (promise){
             // execute error handler on any promise that fails
-            return promise.catch(function(err){
-                if(errorHandler) {
+            return promise.catch(function (err){
+                if(errorHandler){
                     errorHandler(err);
                 }
             });
