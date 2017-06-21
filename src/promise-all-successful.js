@@ -2,9 +2,9 @@
 
     'use strict';
 
-    Promise.any = promiseAny;
+    Promise.allSuccessful = promiseAllSuccessful;
 
-    function promiseAny(promises, errorHandler){
+    function promiseAllSuccessful(promises, errorHandler){
         var results = [];
 
         if(!promises){

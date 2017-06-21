@@ -1,14 +1,14 @@
 {
-  "name": "promise-any",
+  "name": "promise-all-successful",
   "version": "1.0.0",
   "description": "an extension of ES6 Promise.prototype that takes an array of promises and returns a promise that resolves with the results of the successful promises.",
-  "main": "src/promise-any.js",
+  "main": "src/promise-all-successful.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bowofolaf/promise-any.git"
+    "url": "git+https://github.com/bowofolaf/promise-all-successful.git"
   },
   "keywords": [
     "promise",
@@ -17,9 +17,9 @@
   "author": "bowofola",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bowofolaf/promise-any/issues"
+    "url": "https://github.com/bowofolaf/promise-all-successful/issues"
   },
-  "homepage": "https://github.com/bowofolaf/promise-any#readme",
+  "homepage": "https://github.com/bowofolaf/promise-all-successful#readme",
   "dependencies": {
     "grunt": "^1.0.1",
     "semantic-release": "^6.3.6"

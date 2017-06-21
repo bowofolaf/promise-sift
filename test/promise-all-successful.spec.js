@@ -1,6 +1,6 @@
-describe('Promise any', function (){
+describe('Promise.allSuccessful', function (){
     it('should be defined', function (){
-        expect(Promise.any).toBeDefined();
+        expect(Promise.allSuccessful).toBeDefined();
     });
 
     it('should return list of results for successful promises', function (done){
@@ -15,7 +15,7 @@ describe('Promise any', function (){
         var _results;
 
         // fire
-        Promise.any(promises).then(function (results){
+        Promise.allSuccessful(promises).then(function (results){
             _results = results;
         });
 
@@ -38,7 +38,7 @@ describe('Promise any', function (){
         var errorHandler = jasmine.createSpy('errorHandler');
 
         // fire
-        Promise.any(promises, errorHandler).then(function (results){
+        Promise.allSuccessful(promises, errorHandler).then(function (results){
         });
 
         // bellow
