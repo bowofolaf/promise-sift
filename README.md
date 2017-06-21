@@ -1,5 +1,5 @@
 # promise-all-successful
-[![Build Status](https://travis-ci.org/bowofolaf/promise-all-successful.svg?branch=master)](https://travis-ci.org/bowofolaf/promise-any)
+[![Build Status](https://travis-ci.org/bowofolaf/promise-all-successful.svg?branch=master)](https://travis-ci.org/bowofolaf/promise-all-successful)
 
 ### about
 
