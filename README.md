@@ -2,9 +2,10 @@
 [![Build Status](https://travis-ci.org/bowofolaf/promise-sift.svg?branch=master)](https://travis-ci.org/bowofolaf/promise-sift)
 
 
-ever have a list of promises and you to sift through the chaff and get the fine grain you're really looking for? 
-or maybe you just want to fire a bunch of ajax requests in parallel and embrace the winners that made it at the finish line and not bother about the guys who fainted along the way.
-this is promise-sift
+ever have a list of promises and you wish to sift through the chaff and obtain the fine grain you're really looking for? 
+or maybe you just want to fire a bunch of ajax requests in parallel and embrace the winners that made it - at the finish line - not bothering about the guys who fainted along the way.
+
+this is promise-sift.
 
 ## about
 the function is extended over the ES6 [Promise][promise] object like `Promise.all` and `Promise.race`.
@@ -22,7 +23,8 @@ can be loaded as
 the `Promise.sift` function accepts an array of promises, and an optional error handler function. 
 
 
-basic use
+##### basic use
+
 ```javascript
 var promises = [
     Promise.resolve('i made it'),
@@ -35,8 +37,8 @@ Promise.sift(promises).then(function (results){
 });
 ```
 
-#####using an error handler
-you can pass in a function if you wish to log/do-whatever with the ones that do fail, however `onRejected` still wont be called on the returned promise;
+##### using an error handler
+you can pass in a function if you wish to log/do-whatever with the ones that do fail, however the rejection handler still wont be called on the returned promise.
 ```javascript
     var promises = [
         Promise.resolve('i made it'),
@@ -54,8 +56,9 @@ you can pass in a function if you wish to log/do-whatever with the ones that do 
         console.log(reason); // never executed
     });
 ```
+this keeps in line with the idea of not really caring about the fails, and focusing on the passes
 
-when is onRejected called?
+##### when is onRejected called?
 
 1. by standard, when an error is thrown in your fulfillment handler (the first function you pass to `then`).
 2. if the first parameter you pass in (`promises`) is not an array or is an empty array.
