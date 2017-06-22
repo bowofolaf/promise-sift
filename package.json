@@ -1,14 +1,14 @@
 {
-  "name": "promise-all-successful",
+  "name": "promise-sift",
   "version": "1.0.0",
-  "description": "an extension of ES6 Promise.prototype that takes an array of promises and returns a promise that resolves with the results of the successful promises.",
-  "main": "src/promise-all-successful.js",
+  "description": "an extension of ES6 Promise that takes an array of promises and returns a promise that is fullfilled with the results of the successful promises.",
+  "main": "src/promise-sift.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bowofolaf/promise-all-successful.git"
+    "url": "git+https://github.com/bowofolaf/promise-sift.git"
   },
   "keywords": [
     "promise",
@@ -17,9 +17,9 @@
   "author": "bowofola",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bowofolaf/promise-all-successful/issues"
+    "url": "https://github.com/bowofolaf/promise-sift/issues"
   },
-  "homepage": "https://github.com/bowofolaf/promise-all-successful#readme",
+  "homepage": "https://github.com/bowofolaf/promise-sift#readme",
   "dependencies": {
     "grunt": "^1.0.1",
     "semantic-release": "^6.3.6"

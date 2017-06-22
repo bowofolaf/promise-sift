@@ -1,6 +1,6 @@
 describe('Promise.allSuccessful', function (){
     it('should be defined', function (){
-        expect(Promise.allSuccessful).toBeDefined();
+        expect(Promise.sift).toBeDefined();
     });
 
     it('should return list of results for successful promises', function (done){
@@ -15,11 +15,11 @@ describe('Promise.allSuccessful', function (){
         var _results;
 
         // fire
-        Promise.allSuccessful(promises).then(function (results){
+        Promise.sift(promises).then(function (results){
             _results = results;
         });
 
-        // bellow
+        // bellows
         setTimeout(function (){
             expect(_results).toBeDefined();
             expect(_results.length).toBe(3);
@@ -38,12 +38,25 @@ describe('Promise.allSuccessful', function (){
         var errorHandler = jasmine.createSpy('errorHandler');
 
         // fire
-        Promise.allSuccessful(promises, errorHandler).then(function (results){
+        Promise.sift(promises, errorHandler).then(function (results){
         });
 
-        // bellow
+        // bellows
         setTimeout(function (){
             expect(errorHandler).toHaveBeenCalledTimes(2);
+        }, 50);
+    });
+
+    it('should reject when bad data supplied', function() {
+        // wood
+        var errorHandler = jasmine.createSpy('errorHandler');
+
+       // fire
+        Promise.sift([]).catch(errorHandler);
+
+        // bellows
+        setTimeout(function (){
+            expect(errorHandler).toHaveBeenCalled();
         }, 50);
     });
 });
