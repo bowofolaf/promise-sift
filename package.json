@@ -1,6 +1,6 @@
 {
   "name": "promise-sift",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an extension of ES6 Promise that takes an array of promises and returns a promise that is fullfilled with the results of the successful promises.",
   "main": "src/promise-sift.js",
   "scripts": {

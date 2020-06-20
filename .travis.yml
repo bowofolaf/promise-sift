@@ -1,6 +1,15 @@
 language: node_js
 node_js:
-  - "7"
+- 14.4.0
 cache:
   directories:
-    - "node_modules"
+  - node_modules
+deploy:
+  provider: npm
+  email: bowofola@gmail.com
+  api_key:
+    secure: M+86Py1zwW7tv2sXKqw8cZ17nAUGLD8xPt370LAP2DiwqW2sSohG9BZCnLx7GFhnFgFNNHyx75O/GOrM1E2/aXvhACGIZ9yIPk0LzzIq/9i7j8izScWl47R4EBJPzTcjIOhee7p+ZzTsilQvdqz+rCyH+TVpcphYgbq5AA3bkboubgwBV2/7jtC57fi/lMkQT6HG6dkr8A4UFO6JbYkp619NXEzLfY+Ycak/3PzYec9bJH2BEJ4S18JjLehQIchP3MzHqbOwkU/Hxwlb4rDiaHYpWTMoZ+OYUn4soab1IIQQ0ta0daIAAmDWIp9ZwvS5FVs4C2qO9XTbloFTymUaseoH71ocITLd9mYYORQMMRNFbM/8JJrQjr0FdFPTgOGT7ZxRB1VT3HlK8tNmOAsNzV+Km55PppwmtcZ+i6UAZy+CXHYIeEti4HBpYazx1ijJB2Wo2kAq/ou6EX3kJEHof9GbeFuFtcgG/+ipC7UIMdReoe/ktxVPYsGXaEtkEr6Fikx7Ar9YmPkOyUV9Ir1WTKrOCgHnbrYtT5EXZOpRIXXU5gF2/TUAbRLg6ggSypVEZ5VLyuj6uvr9imLIHZr3oJwyp+KfC36kNsRrD/WNY6lQjUZusek0q/TD4Y8+hM7iaQ6tbSseKbTU2M/NWJfZim9oNaGekHfmpqZkV2EvoOg=
+  on:
+    tags: true
+    repo: bowofolaf/promise-sift
+  skip_cleanup: 'true'
