@@ -1,6 +1,6 @@
 {
   "name": "promise-sift",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "an extension of ES6 Promise that takes an array of promises and returns a promise that is fullfilled with the results of the successful promises.",
   "main": "src/promise-sift.js",
   "scripts": {
@@ -24,6 +24,7 @@
     "grunt": "^1.0.1",
     "semantic-release": "^6.3.6"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
     "grunt-cli": "^1.2.0",
     "grunt-contrib-jshint": "^1.1.0",
