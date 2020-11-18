@@ -22,7 +22,7 @@
   "homepage": "https://github.com/bowofolaf/promise-sift#readme",
   "dependencies": {
     "grunt": "^1.0.1",
-    "semantic-release": "^6.3.6"
+    "semantic-release": "^17.2.3"
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
