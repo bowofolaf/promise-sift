@@ -30,7 +30,7 @@
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-karma": "^2.0.0",
     "jasmine-core": "^2.6.4",
-    "karma": "^1.7.0",
+    "karma": "^6.3.14",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "promise-polyfill": "^6.0.2"
