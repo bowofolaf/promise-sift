@@ -22,15 +22,15 @@
   "homepage": "https://github.com/bowofolaf/promise-sift#readme",
   "dependencies": {
     "grunt": "^1.5.3",
-    "semantic-release": "^6.3.6"
+    "semantic-release": "^19.0.5"
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "devDependencies": {
     "grunt-cli": "^1.2.0",
     "grunt-contrib-jshint": "^1.1.0",
-    "grunt-karma": "^2.0.0",
+    "grunt-karma": "^4.0.2",
     "jasmine-core": "^2.6.4",
-    "karma": "^1.7.0",
+    "karma": "^6.4.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "promise-polyfill": "^6.0.2"
